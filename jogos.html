@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogos Eliminatórios</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            font-family:'Courier New', Courier, monospace;
+            font-size: 50px;
+            position: relative;
+            text-align: center;
+            color: red;
+        }
+        
+        label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            position: relative;
+        }
+        input{
+            position: relative;
+            border-radius: 10%;
+            border-style:none;
+            width: 5cm;
+            height: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:teal;
+            background-color:rgb(243, 237, 227);
+           
+        }
+        #adcClube{
+            position: relative;
+            width: 10cm;
+            height: 30px;
+            text-align: center;
+            border-style:ridge;
+            font-family: cursive;
+            font-size: 17px;
+        }
+       pre{
+            font-family: cursive;
+            font-size: 20px;
+        }
+       
+    </style>
+  </head>
+  <body>
+    <h1>Jogos Eliminatórios</h1>
+    <label for="time1">Adicione os clubes à serem sorteados!</label>
+    <br><br>
+    <input type="text" id="adcClube" />
+    <br> <br>
+    <input type="button" value="Adicionar" id="adc" />
+    <br /><br />
+    <input type="button" value="Listar" id="listar" />
+    <input type="button" value="Mostrar Tabela dos Jogos" id="mostrar" />
+    <pre id="mostrandoLista1"></pre>
+    <pre id="mostrandoPartidas"></pre>
+  </body>
+  <script src="marcandoPartida.js"></script>
+</html>
