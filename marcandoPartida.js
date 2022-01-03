@@ -27,6 +27,13 @@ function listando() {
   }
   document.getElementById("mostrandoLista1").textContent = "Lista de Clubes" + "\n" + listandoClubes;
 }
+function mostrarlista() {
+  var listaCompleta = "";
+  for (var i = 0; i < clubes.length; i++) {
+    listaCompleta += clubes[i] + "\n";
+  }
+  document.getElementById("mostrandoLista1").textContent = "Lista completa dos clubes cadastrados" + "\n" + listandoClubes;
+}
 var listar = document.getElementById("listar");
 listar.addEventListener("click",listando);
 

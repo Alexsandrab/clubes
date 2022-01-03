@@ -8,29 +8,31 @@
     <style>
         body{
             text-align: center;
+            width:100%;
+            height:100%;
         }
         h1{
-            font-family:'Courier New', Courier, monospace;
-            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 80px;
             position: relative;
             text-align: center;
-            color: red;
+            color: rgb(93, 4, 4);
         }
         
         label{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
             position: relative;
         }
         input{
             position: relative;
-            border-radius: 10%;
+            border-radius: 5%;
             border-style:none;
             width: 5cm;
-            height: 20px;
+            height: 30px;
             font-family:Georgia, 'Times New Roman', Times, serif;
-            color:teal;
-            background-color:rgb(243, 237, 227);
+            color:rgb(17, 26, 8);
+           
            
         }
         #adcClube{
@@ -46,21 +48,39 @@
             font-family: cursive;
             font-size: 20px;
         }
+        img{
+            margin-top: -20px;
+            margin-bottom: -20px;
+            margin-left: -10px;
+            position: relative;
+            width: 1366px;
+            height: 700px;
+            opacity: 0.8;
+            display: block;
+        }
+        .tudo{
+            position: absolute;
+            text-align: center;
+            top: 0px;
+            left:400px;
+        }
        
     </style>
   </head>
   <body>
-    <h1>Jogos Eliminatórios</h1>
-    <label for="time1">Adicione os clubes logo abaixo!</label>
-    <br><br>
-    <input type="text" id="adcClube" />
-    <br> <br>
-    <input type="button" value="Adicionar" id="adc" />
-    <br /><br />
-    <input type="button" value="Listar" id="listar" />
-    <input type="button" value="Mostrar Tabela dos Jogos" id="mostrar" />
-    <pre id="mostrandoLista1"></pre>
-    <pre id="mostrandoPartidas"></pre>
+    <img src="futebol.jpg" alt="futebol">
+    <div class="tudo">
+        <h1>Jogos Eliminatórios</h1>
+        <label for="time1">Adicione os clubes logo abaixo!</label>
+        <br><br>
+        <input type="text" id="adcClube" />
+        <input type="button" value="Adicionar" id="adc" style="background-color: rgb(58, 104, 12);" />
+        <br /><br />
+        <input type="button" value="Listar" id="listar"  style="background-color: sienna;"/>
+        <input type="button" value="Mostrar Tabela dos Jogos" id="mostrar" style="background-color: rgb(156, 156, 7);" />
+        <pre id="mostrandoLista1" style="color: rgb(23, 23, 179);"></pre> 
+        <pre id="mostrandoPartidas" style="color: rgb(57, 10, 88);"></pre>
+    </div>
   </body>
   <script src="marcandoPartida.js"></script>
 </html>
